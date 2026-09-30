@@ -2,4 +2,4 @@
 
 This repository is for learning and practicing **MVC (Model-View-Controller) architecture**.
 
-- Elle, Jamila, Irvin
+— Elle, Jamila, Irvin
