@@ -8,12 +8,25 @@ namespace MVC.Controllers
     {
         public IActionResult Index()
         {
+
             return View();
+
+
         }
 
         public IActionResult Privacy()
         {
+
             return View();
+
+
+        }
+
+        public IActionResult Profile()
+        {
+            
+            ProfileModel model1 = new ProfileModel(18, "Irvin", "I love music.");
+            return View(model1);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
