@@ -8,25 +8,25 @@ namespace MVC.Controllers
     {
         public IActionResult Index()
         {
-
             return View();
-
-
         }
 
         public IActionResult Privacy()
         {
-
             return View();
-
-
         }
-
-        public IActionResult Profile()
+        public IActionResult Enerbon()
         {
-            
-            ProfileModel model1 = new ProfileModel(18, "Irvin", "I love music.");
-            return View(model1);
+            EnerbonModel siEnerbon = new EnerbonModel(
+                19,
+                "Irvin John J. Parulan",
+                "IV OF SPADES ♠",
+                "walA",
+                "Konoha Village, Biringan City",
+                new string[] { "kagebunshin tektik", "BANKAI!", "Transform (Ben 10)" },
+                "https://irvinparulan.com/dipatapos"
+            );
+            return View(siEnerbon);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -36,3 +36,4 @@ namespace MVC.Controllers
         }
     }
 }
+

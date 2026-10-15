@@ -1,0 +1,52 @@
+@model MVC.Models.EnerbonModel
+@{
+    ViewData["Title"] = "Irvin's Prupayl";
+}
+
+<style>
+    .prupayl {
+        background: black url('/images/enerbon/matrix.gif') repeat;
+        text-align: center;
+        padding: 25px 10px;
+        color: white;
+        font-family: "Comic Sans MS", cursive;
+    }
+    .prupayl p {
+        background-color: black;
+        width: fit-content;
+        max-width: 100%;
+        margin: 12px auto;
+        padding: 3px;
+    }
+    .prupayl img { max-width: 28%; margin: 10px; }
+    .prupayl a { color: cyan; }
+</style>
+
+<div class="prupayl">
+    <marquee style="color: lime;">WELCOME TO MY GENJUTSU. bawal mag recall dito</marquee>
+    <h1 style="color: hotpink; font-family: Impact;">IRVIN'S PRUPAYL !!!</h1>
+    <img src="~/images/enerbon/naruto.gif" alt="Naruto dancing" style="width: 160px; transform: rotate(-8deg);" />
+    <img src="~/images/enerbon/ben10.gif" alt="Ben 10 alien" style="width: 110px; transform: rotate(12deg);" />
+    <img src="~/images/enerbon/bleach.gif" alt="Ichigo from Bleach" style="width: 190px; transform: rotate(-4deg);" />
+    <p style="color: orange; font-family: Georgia;">Welcome :>></p>
+
+    <h2 style="color: yellow; font-family: 'Times New Roman';">@Model.Name</h2>
+    <p>@Model.Age years old</p>
+    <p style="color: lime; font-family: 'Courier New';">with @Model.Age years experience of existing</p>
+    <p style="color: hotpink;">Occupation: @Model.Occupation</p>
+    <p>Lives in @Model.LivesIn</p>
+  
+
+    <h2 style="color: orange; transform: rotate(-3deg);">SKILLS</h2>
+    <p>@Model.Skills[0]</p>
+    <p style="color: yellow; font-family: Arial;">@Model.Skills[1]</p>
+    <p style="color: lime;">@Model.Skills[2]</p>
+
+    <h2 style="color: hotpink; font-family: Georgia;">@Model.Favorite</h2>
+    <img src="~/images/enerbon/ivos.gif" alt="6 7" style="width: 220px; max-width: 80%; transform: rotate(5deg);" />
+
+    <h2 style="color: cyan; font-family: Impact;">PORTFOLIO</h2>
+    <p><a href="@Model.Portfolio" target="_blank">CLICK MO NA, WAG KA MAHIYA</a></p>
+    <p style="color: hotpink;">thanks for visiting. pwede ka na mag shunpo.</p>
+</div>
+
