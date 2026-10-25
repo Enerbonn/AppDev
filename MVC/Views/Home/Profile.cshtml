@@ -1,0 +1,105 @@
+@model MVC.Models.Profile
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="profile-page">
+
+    <div class="profile-card">
+
+        <div class="profile-top">
+
+            <div class="title-section">
+                <h1>Profile</h1>
+                <p>Personal Information</p>
+                <p class="student-course">BSCS Student</p>
+            </div>
+
+            <img src="~/images/pfp.jpg"
+                 style="width:120px; height:180px; object-fit:cover;"
+                 alt="Profile Picture">
+
+        </div>
+
+        <div class="profile-details">
+
+            <div class="info-row">
+                <span class="label">Name</span>
+                <span>@Model.Name</span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">School</span>
+                <span>@Model.School</span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">Phone Number</span>
+                <span>@Model.PhoneNumber</span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">Address</span>
+                <span>@Model.Address</span>
+            </div>
+
+        </div>
+
+        <section id="skills" class="skills-section">
+
+            <h2>Skills</h2>
+
+            <div class="text">
+                These are some of the skills and technologies I am currently learning.
+            </div>
+
+            <div class="cells">
+
+                <div class="cell">
+                    <img src="~/images/html-logo.webp" alt="HTML Logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="~/images/css-logo.webp" alt="CSS Logo">
+                    <span>CSS</span>
+                </div>
+
+                <div class="cell">
+                    <img src="~/images/github-logo.webp" alt="GitHub Logo">
+                    <span>GitHub</span>
+                </div>
+
+                <div class="cell">
+                    <img src="~/images/git-logo.webp" alt="Git Logo">
+                    <span>Git</span>
+                </div>
+
+                <div class="cell">
+                    <img src="~/images/csharp-logo.webp" alt="C# Logo">
+                    <span>C#</span>
+                </div>
+
+                <div class="cell">
+                    <img src="~/images/java-logo.webp" alt="Java Logo">
+                    <span>Java</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="goals-section">
+
+            <h2>Goals</h2>
+
+            <p>
+                My goal is to learn as much as I can and gain different skills along the way. I want to try out new projects and see how things actually work in the real world instead of focusing on just one topic. I really want to step out of my comfort zone, learn to solve problems better, and keep improving so I can be ready for any challenge in the future.
+            </p>
+
+        </section>
+
+    </div>
+
+</div>

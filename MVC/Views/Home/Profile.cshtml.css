@@ -1,0 +1,145 @@
+.profile-page {
+    min-height: 100vh;
+    background-color: #a89d91;
+    padding: 50px 20px;
+}
+
+.profile-card {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: #fffaf5;
+    border: 1px solid #d8c8bd;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(92, 70, 60, 0.12);
+    color: #4b3b36;
+}
+
+.profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #c9a99c;
+}
+
+/* Matches: <div class="title-section"> <h1> */
+.title-section h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    color: #6a4f47;
+}
+
+/* Matches: <div class="title-section"> <p> */
+.title-section p {
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #8a746b;
+}
+
+/* Add class="profile-picture" to your img */
+.profile-picture {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #c9a99c;
+}
+
+.profile-details {
+    margin-top: 25px;
+}
+
+.info-row {
+    display: flex;
+    padding: 13px 5px;
+    border-bottom: 1px solid #eadfd8;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.label {
+    width: 160px;
+    font-weight: bold;
+    color: #7b5f56;
+}
+
+
+.skills-section {
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #6a4f47;
+    margin-bottom: 12px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #6d5c55;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-section .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 14px;
+
+    background-color: #f7eee8;
+
+    border: 1px solid #c9a99c;
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+
+    color: #4b3b36;
+}
+
+.skills-section .cell img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+.student-course {
+    margin-top: 3px;
+    font-weight: bold;
+    color: #7b5f56;
+}
+
+.goals-section {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.goals-section h2 {
+    font-size: 30px;
+    color: #6a4f47;
+    margin-bottom: 15px;
+}
+
+.goals-section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.7;
+}
